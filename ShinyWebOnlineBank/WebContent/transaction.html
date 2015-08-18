@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Shiny Web Online Bank</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Shiny Bank</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a href="account.html">Accounts</a></li>
+					<li><a href="deposit.html">Deposit</a></li>
+					<li><a href="transaction.html">Transactions</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+  <h2>Transactions</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Transaction Type</th>
+        <th>Account1 #</th>
+        <th>Amount#</th>
+        <th>Account2 #</th>
+        <th>Date</th>
+        <th>Other</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Deposit</td>
+        <td>8001</td>
+        <td>5000.98</td>
+        <td></td>
+        <td>2015-09-08</td>
+        <td><a href="transactionDetail1.html">Detail</a></td>
+      </tr>
+      <tr>
+        <td>Transfer</td>
+        <td>8002</td>
+        <td>1098.00</td>
+        <td>7001</td>
+        <td>2011-03-15</td>
+        <td><a href="transactionDetail2.html">Detail</a></td>
+      </tr>
+      <tr>
+        <td>Check</td>
+        <td>71265</td>
+        <td>3214.45</td>
+        <td></td>
+        <td>1991-04-05</td>
+        <td><a href="transactionDetail3.html">Detail</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</body>
+</html>
